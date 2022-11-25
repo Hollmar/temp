@@ -6,7 +6,7 @@
 
 #include "pb_encode.h"
 #include "pb_decode.h"
-#include "simple.pb.h"
+#include "hr.pb.h"
 #include "common.h"
 
 #include <sys/types.h>
@@ -159,5 +159,4 @@ int send_Data()
 
 void get_sensor_data()
 {
-	return;
 }
