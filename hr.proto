@@ -1,0 +1,17 @@
+// Message sent for heart rate values
+
+syntax = "proto2";
+
+message HeartRateMessage {
+	required int32 value = 1;
+}
+
+message PulseMessage {
+	required int32 value = 1;
+}
+
+message AccelMessage {
+	required int32 x = 1;
+	required int32 y = 1;
+	required int32 z = 1;
+}
