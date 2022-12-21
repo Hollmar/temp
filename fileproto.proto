@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message RequestSensorInformation {
+    optional int32 value = 1;
+}
+
+message SendSensorInformation {
+    optional string name = 1;
+    required int32 numberOfChannels = 2;
+    required int32 sampleRate = 3;
+    required int32 resolution = 4;
+}
+
+message SendConfiguration {
+    required int32 sensor = 1;
+    required int32 sampleRate = 2;
+    required int32 resolution = 3;
+    required int32 numberOfChannels = 4;
+}
+
+message SendMessageType {
+    required int32 messageType = 1;
+}
+
